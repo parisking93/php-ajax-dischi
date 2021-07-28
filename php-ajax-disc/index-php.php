@@ -16,17 +16,20 @@ include __DIR__ . '/db.php';
 </head>
 <body>
     <header>
-        <div class="box-logo"></div>
+        <div class="box-logo">
+            <h1>PhPlix</h1>
+        </div>
     </header>
     <main>
         <div class="box-songs">
             <?php foreach($db as $key => $album) { ?>
                 <div class="box-album">
                     <img src="<?php echo $album['poster'] ?>" alt="">
-                    <h3><?php echo $album['title'] ?></h3>
-                    <h4><?php echo $album['year'] ?></h4>
-                    <span><?php echo $album['author'] ?></span>
-
+                    <div class="box-text">
+                        <h2><?php echo $album['title'] ?></h2>
+                        <h3><?php echo $album['year'] ?></h3>
+                        <span><?php echo $album['author'] ?></span>
+                    </div>
                 </div>
             <?php } ?>
         </div>
