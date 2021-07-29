@@ -12,11 +12,16 @@
 </head>
 <body>
     <div id="app">
+    <!-- header -->
         <header>
             <div class="box-logo">
                 <h1>PhPlix</h1>
             </div>
+            <select id="seleziona" v-model="selected">
+                <option v-for="genre in genreArray" :value="genre">{{genre}}</option>
+            </select>
         </header>
+    <!-- main -->
         <main>
             <div class="box-songs">
                 <div class="box-album" v-for="album in albumArray">
