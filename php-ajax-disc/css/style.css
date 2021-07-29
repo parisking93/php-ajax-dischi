@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    overflow: hidden;
+}
 header {
-    height: 100px;
+    height: 80px;
     background-color: #0a0a0a;
-    line-height: 100px;
+    line-height: 80px;
     padding: 0 70px;
 }
 .box-logo h1 {
     color: red;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 100%;
     background-color: #383838;
     color: white;
@@ -25,7 +28,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .box-album {
     width: calc(100% / 5);
@@ -39,12 +42,12 @@ main {
     cursor: pointer;
 }
 .box-album .box-text {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .box-text > * {
     margin-bottom: 5px;
     cursor: pointer;
 }
 .box-text span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }

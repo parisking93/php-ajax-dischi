@@ -11,7 +11,7 @@ include __DIR__ . '/db.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phplix</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +26,7 @@ include __DIR__ . '/db.php';
                 <div class="box-album">
                     <img src="<?php echo $album['poster'] ?>" alt="">
                     <div class="box-text">
-                        <h2><?php echo $album['title'] ?></h2>
+                        <h3><?php echo $album['title'] ?></h3>
                         <h3><?php echo $album['year'] ?></h3>
                         <span><?php echo $album['author'] ?></span>
                     </div>
