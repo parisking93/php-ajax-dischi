@@ -1,15 +1,21 @@
-let prova = [];
-axios
-    .get('api/api-db.php')
-    .then(response => {
-        // console.log(response.data);
-        prova = response.data;
-        console.log(prova);
-    })
-    .catch(error => {
-        console.log(error);
-    });
 
-for(let i = 0; i <  prova.length; i++) {
-    console.log(prova[i]);
-}
+const app = new Vue (
+    {
+        el: '#app',
+        data : {
+            url : 'api/api-db.php',
+            albumArray : ''
+        },
+        mounted() {
+            axios
+            .get(this.url)
+            .then(response => {
+                this.albumArray = response.data;
+            })
+            .catch(error => {
+                console.log(error);
+            });
+        }
+    }
+    
+);

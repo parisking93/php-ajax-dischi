@@ -3,5 +3,5 @@
 
 
     header('Content-Type: application/json');
-    echo json_decode($db);
+    echo json_encode($db);
 ?>
