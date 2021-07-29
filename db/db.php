@@ -59,7 +59,7 @@ $db = [
         'author' => "Michael Jacjson",
         'year' => 1997,
         'poster' => "https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg"
-    ],
+    ]
 
 ];
 
