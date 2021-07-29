@@ -1,7 +1,7 @@
 
 <?php 
 
-include __DIR__ . '/db.php';
+require __DIR__ . '/db/db.php';
 ?>
 
 
@@ -26,13 +26,14 @@ include __DIR__ . '/db.php';
                 <div class="box-album">
                     <img src="<?php echo $album['poster'] ?>" alt="">
                     <div class="box-text">
-                        <h3><?php echo $album['title'] ?></h3>
-                        <h3><?php echo $album['year'] ?></h3>
-                        <span><?php echo $album['author'] ?></span>
+                        <h3><?= $album['title'] ?></h3>
+                        <h3><?= $album['year'] ?></h3>
+                        <span><?= $album['author'] ?></span>
                     </div>
                 </div>
             <?php } ?>
         </div>
+        <script src="js/script.js"></script>
     </main>
 </body>
 </html>

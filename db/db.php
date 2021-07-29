@@ -1,6 +1,4 @@
-<!-- Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
 <?php
-
 $db = [
     [
         'title' => 'New Jersey',
@@ -63,5 +61,7 @@ $db = [
         'poster' => "https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg"
     ],
 
-    ];
+];
+
 ?>
+
